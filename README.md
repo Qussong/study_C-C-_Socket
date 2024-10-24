@@ -42,6 +42,11 @@ yet...
 [프로젝트 시작]</br>
 -&nbsp;Winsock 을 활용한 TCP 기반 프로젝트 생성 및 업로드</br>
 
+<b>24/10/24 :</b></br>
+-&nbsp;코드 리펙토링</br>
+-&nbsp;Server-Client 코드 및 기능 분석</br>
+&nbsp;&nbsp;(Note : [Notion URL 소켓통신](https://reminiscent-moth-47a.notion.site/f0a8c556023d44f6ac4c8c45f5919266?pvs=4))
+
 <!--
 <b>24/00/00 :</b></br>
 -&nbsp;</br>
