@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Server\\",
+  "WorkspaceRootPath": "D:\\Unreal Project\\study_C-Cpp_SocketChat\\Socket_Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E605C7B-4FED-45DB-8364-FA514A518802}|Socket_Server\\Socket_Server.vcxproj|C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Server\\Socket_Server\\Socket_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5E605C7B-4FED-45DB-8364-FA514A518802}|Socket_Server\\Socket_Server.vcxproj|D:\\Unreal Project\\study_C-Cpp_SocketChat\\Socket_Server\\Socket_Server\\Socket_UpgradeServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5E605C7B-4FED-45DB-8364-FA514A518802}|Socket_Server\\Socket_Server.vcxproj|solutionrelative:Socket_Server\\Socket_UpgradeServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E605C7B-4FED-45DB-8364-FA514A518802}|Socket_Server\\Socket_Server.vcxproj|D:\\Unreal Project\\study_C-Cpp_SocketChat\\Socket_Server\\Socket_Server\\Socket_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5E605C7B-4FED-45DB-8364-FA514A518802}|Socket_Server\\Socket_Server.vcxproj|solutionrelative:Socket_Server\\Socket_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,17 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 165,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ebe3f1d5-feac-4131-bf03-0e85ffb89a89}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Socket_UpgradeServer.cpp",
+              "DocumentMoniker": "D:\\Unreal Project\\study_C-Cpp_SocketChat\\Socket_Server\\Socket_Server\\Socket_UpgradeServer.cpp",
+              "RelativeDocumentMoniker": "Socket_Server\\Socket_UpgradeServer.cpp",
+              "ToolTip": "D:\\Unreal Project\\study_C-Cpp_SocketChat\\Socket_Server\\Socket_Server\\Socket_UpgradeServer.cpp",
+              "RelativeToolTip": "Socket_Server\\Socket_UpgradeServer.cpp",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAgwFkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-24T14:40:05.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Socket_Server.cpp",
-              "DocumentMoniker": "C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Server\\Socket_Server\\Socket_Server.cpp",
+              "DocumentMoniker": "D:\\Unreal Project\\study_C-Cpp_SocketChat\\Socket_Server\\Socket_Server\\Socket_Server.cpp",
               "RelativeDocumentMoniker": "Socket_Server\\Socket_Server.cpp",
-              "ToolTip": "C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Server\\Socket_Server\\Socket_Server.cpp",
+              "ToolTip": "D:\\Unreal Project\\study_C-Cpp_SocketChat\\Socket_Server\\Socket_Server\\Socket_Server.cpp",
               "RelativeToolTip": "Socket_Server\\Socket_Server.cpp",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAkwGEAAAAWAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwGsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-22T06:31:38.82Z",
               "EditorCaption": ""

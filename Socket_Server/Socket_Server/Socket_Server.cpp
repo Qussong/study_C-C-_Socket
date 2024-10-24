@@ -68,6 +68,8 @@ int main()
 	// 메세지 전송 (Server -> Client)
 	const char* Message = "Hello";
 	sendMessage(ClientSocket, Message);
+
+	// 소켓 닫기
 	Result = closesocket(ClientSocket);
 	if (SOCKET_ERROR == Result)
 	{
@@ -86,8 +88,8 @@ int main()
 	{
 		std::cout << "Server Socket Closed Successfully." << std::endl;
 	}
-	WSACleanup();
 
+	WSACleanup();
 	return 0;
 }
 

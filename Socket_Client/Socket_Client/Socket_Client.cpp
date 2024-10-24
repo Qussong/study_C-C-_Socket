@@ -11,7 +11,7 @@ int main()
 	SOCKET ClientSocket;
 	struct sockaddr_in Server;
 	int Result;
-	char Buffer[2000] = {};
+	char Buffer[1024] = {};
 
 	// Winsock √ ±‚»≠
 	Result = WSAStartup(MAKEWORD(2, 2), &WSA);

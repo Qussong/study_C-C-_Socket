@@ -46,7 +46,12 @@ yet...
 &nbsp;&nbsp;실행 결과 ↓</br>
 &nbsp;&nbsp;<img src="./ReadMe/SocketServerToClient.png" width=300><br>
 -&nbsp;Server-Client 코드 및 기능 분석</br>
-&nbsp;&nbsp;(Note : [Notion URL 소켓통신](https://reminiscent-moth-47a.notion.site/f0a8c556023d44f6ac4c8c45f5919266?pvs=4))
+&nbsp;&nbsp;( Note : [Notion URL 소켓통신](https://reminiscent-moth-47a.notion.site/f0a8c556023d44f6ac4c8c45f5919266?pvs=4) )</br>
+-&nbsp;Loop문 추가하여 클라에서 서버로 지속적인 메세지 보낼 수 있도록 코드추가</br>
+&nbsp;&nbsp;( Note : [Notion URL 지속적인 메세지 전달](https://reminiscent-moth-47a.notion.site/1297e40d2ccc809f960cd8dce57cb680?pvs=4) )</br>
+&nbsp;&nbsp;실행 결과 ↓</br>
+&nbsp;&nbsp;<img src="./ReadMe/LoopMessage.png" width=500><br>
+
 
 <!--
 <b>24/00/00 :</b></br>
