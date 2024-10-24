@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\assortrock21\\Desktop\\Socket_Client\\",
+  "WorkspaceRootPath": "C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2002BF89-63DE-48FB-87E1-4BAE69DAAB7B}|Socket_Client\\Socket_Client.vcxproj|C:\\Users\\assortrock21\\Desktop\\Socket_Client\\Socket_Client\\Socket_Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2002BF89-63DE-48FB-87E1-4BAE69DAAB7B}|Socket_Client\\Socket_Client.vcxproj|C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Client\\Socket_Client\\Socket_Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2002BF89-63DE-48FB-87E1-4BAE69DAAB7B}|Socket_Client\\Socket_Client.vcxproj|solutionrelative:Socket_Client\\Socket_Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Socket_Client.cpp",
-              "DocumentMoniker": "C:\\Users\\assortrock21\\Desktop\\Socket_Client\\Socket_Client\\Socket_Client.cpp",
+              "DocumentMoniker": "C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Client\\Socket_Client\\Socket_Client.cpp",
               "RelativeDocumentMoniker": "Socket_Client\\Socket_Client.cpp",
-              "ToolTip": "C:\\Users\\assortrock21\\Desktop\\Socket_Client\\Socket_Client\\Socket_Client.cpp",
+              "ToolTip": "C:\\Users\\assortrock21\\Desktop\\study_C-C-_Socket\\Socket_Client\\Socket_Client\\Socket_Client.cpp",
               "RelativeToolTip": "Socket_Client\\Socket_Client.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAJAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAYwDwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-22T06:55:12.368Z",
               "EditorCaption": ""

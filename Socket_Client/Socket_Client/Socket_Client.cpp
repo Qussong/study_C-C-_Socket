@@ -8,47 +8,72 @@
 int main()
 {
 	WSADATA WSA;
-	SOCKET Socket;
+	SOCKET ClientSocket;
 	struct sockaddr_in Server;
-	char Buffer[2000];
+	int Result;
+	char Buffer[2000] = {};
 
 	// Winsock 초기화
-	WSAStartup(MAKEWORD(2, 2), &WSA);
+	Result = WSAStartup(MAKEWORD(2, 2), &WSA);
+	if (NO_ERROR != Result)
+	{
+		std::cerr << "Init Winsock Failed" << std::endl;
+		return 1;
+	}
+	std::cout << "Init Winsock Successful" << std::endl;
 
 	// 소켓 생성
-	Socket = socket(AF_INET, SOCK_STREAM, 0);
-	if (Socket == INVALID_SOCKET)
+	ClientSocket = socket(AF_INET, SOCK_STREAM, 0);
+	if (INVALID_SOCKET == ClientSocket)
 	{
-		std::cout << "Could not Create Socket" << std::endl;
+		std::cerr << "Could not Create Socket" << std::endl;
 		return 1;
 	}
+	std::cout << "Create Socket Successful" << std::endl;
 
 	// 서버 주소 구조체 설정
-	Server.sin_family = AF_INET;
-	// IP 주소 설정
-	//Server.sin_addr.s_addr = inet_addr("127.0.0.1"); 
-	if (inet_pton(AF_INET, "127.0.0.1", &Server.sin_addr) <= 0) // inet_pton 사용
+	Server.sin_family = AF_INET;	// IPv4
+	Server.sin_port = htons(8080);	// 포트 번호 8080
+	Result = inet_pton(AF_INET, "127.0.0.1", &Server.sin_addr); // IP 주소 설정
+	if (Result == 0) 
 	{
-		std::cout << "Invalid address" << std::endl;
+		std::cerr << "Invalid IPv4 address format." << std::endl;
 		return 1;
 	}
-	// 포트 번호 8080
-	Server.sin_port = htons(8080);			
+	else if (Result < 0) 
+	{
+		std::cerr << "Error occurred during conversion." << std::endl;
+		return 1;
+	}
+	std::cout << "IPv4 address successfully converted." << std::endl;
 
 	// 서버에 연결
-	if (connect(Socket, (struct sockaddr*)&Server, sizeof(Server)) < 0)
+	Result = connect(ClientSocket, (struct sockaddr*)&Server, sizeof(Server));
+	if (SOCKET_ERROR == Result)
 	{
-		std::cout << "Connection Failed" << std::endl;
+		std::cerr << "Connection Failed" << std::endl;
 		return 1;
 	}
+	std::cout << "Connection Successful" << std::endl;
 
 	// 서버로부터 메세지 받기
-	int RecvSize = recv(Socket, Buffer, 2000, 0);
-	Buffer[RecvSize] = '\0';
-	std::cout << "Server Reply : " << Buffer << std::endl;
+	int RecvSize = recv(ClientSocket, Buffer, sizeof(Buffer) - 1, 0); // -1 to leave space for null-terminator
+	if (SOCKET_ERROR == RecvSize) 
+	{
+		std::cerr << "Receive Failed with Error: " << WSAGetLastError() << std::endl;
+		return 1;
+	}
+	// 결과 출력
+	if (0 == RecvSize)
+	{
+		std::cout << "Connection closed by server." << std::endl;
+	}
+	else
+	{
+		Buffer[RecvSize] = '\0'; // Add null - terminator, 오버 플로우 방지
+		std::cout << "Server Reply (" << RecvSize << " bytes): " << Buffer << std::endl;
+	}
 
-	// 소켓닫기
-	closesocket(Socket);
 	WSACleanup();
 	return 0;
 }
