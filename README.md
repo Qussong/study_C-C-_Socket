@@ -36,7 +36,6 @@ $\color{#4F4F4F}(\ ↓ 이미지\ 클릭시\ 해당\ 페이지로\ 이동합니�
 yet...
 </br>
 
-
 ### $\large\bf\color{#CD5C5C}타임라인$
 <b>24/10/22 :</b></br>
 [프로젝트 시작]</br>
@@ -44,6 +43,8 @@ yet...
 
 <b>24/10/24 :</b></br>
 -&nbsp;코드 리펙토링</br>
+&nbsp;&nbsp;실행 결과 ↓</br>
+&nbsp;&nbsp;<img src="./ReadMe/SocketServerToClient.png" width=300><br>
 -&nbsp;Server-Client 코드 및 기능 분석</br>
 &nbsp;&nbsp;(Note : [Notion URL 소켓통신](https://reminiscent-moth-47a.notion.site/f0a8c556023d44f6ac4c8c45f5919266?pvs=4))
 
